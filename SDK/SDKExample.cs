@@ -1497,8 +1497,7 @@ namespace SDKExample
          // If you use data that does not have account numbers turned on or if the number of digits used for 
          // account numbers is not 4, this sample program will not work properly.
          // If so, you will need to modify this sample program according to your test database.
-         bool ret = SDKInstanceManager.Instance.OpenDatabase(saiFile, username, password, false, "Sage 50 SDK Sample Program", "SASDK", 1);
-         if (ret)
+         if (SDKInstanceManager.Instance.OpenDatabase(saiFile, username, password, false, "Sage 50 SDK Sample Program", "SASDK", 1))
          {
             try
             {
